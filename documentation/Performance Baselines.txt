@@ -1,0 +1,51 @@
+v2.3
+Control Loop: 25 ms
+RoboRIO CPU: 85%
+CAN Utilization: 60%
+Code Bootup Time: 11 s
+Bandwidth Usage: 1.5 Mbs
+
+v2.2
+Control Loop: 25 ms
+RoboRIO CPU: 85%
+CAN Utilization: 60%
+Code Bootup Time: 10.5 s
+Bandwidth Usage: 1 Mbs
+
+v2.1
+Control Loop: 25 ms
+RoboRIO CPU: 85%
+CAN Utilization: 58%
+Code Bootup Time: 11 s
+Bandwidth Usage: 1 Mbs
+
+v2.0
+Control Loop: 25 ms
+RoboRIO CPU: 85%
+CAN Utilization: 56%
+Code Bootup Time: 11 s
+Bandwidth Usage: 1 Mbs
+
+v1.0
+Control Loop: 25 ms
+RoboRIO CPU: 80%
+CAN Utilization: 
+Code Bootup Time: 27 s (with radio configured)
+
+v0.5
+Control Loop: 25 ms
+RoboRIO CPU: 82%
+CAN Utilization: 80%
+Code Bootup Time: 11s
+
+v0.4
+Control Loop: 30 ms
+RoboRIO CPU: 75%
+CAN Utilization: 80%
+Code Bootup Time: 11s
+
+v0.1
+Control Loop: 30 ms
+RoboRIO CPU: 60%
+CAN Utilization: ***%
+Code Bootup Time: *** s

@@ -1,0 +1,41 @@
+Performs an automated systems check. This play should only be run with the robot on blocks or a cart.
+
+*
+start_x_red = 124
+start_y_red = 62
+start_h_red = 0
+start_x_blue = 124
+start_y_blue = 62
+start_h_blue = 0
+*
+DriveWaitForManip(14) # wait until manipulator sequence is complete
+DriveWaitForButton()
+DriveDistanceX(400, 0.2) # drive forward
+DriveWaitForTime(2000)
+DriveDistanceY(200, 0.2) # drive left
+DriveWaitForTime(2000)
+DriveDistanceX(-400, -0.2) # drive backward
+DriveWaitForTime(2000)
+DriveDistanceY(-200, -0.2) # drive right
+DriveWaitForTime(2000)
+DriveAngleH(180, 0.2) # rotate counter-clockwise
+DriveAngleH(0, 0.2) # complete rotation
+DriveWaitForButton()
+DriveDistanceX(350, 1.0) # high gear sprint down-field
+DriveEnd()
+*
+ManipWaitForTeleOp()
+ManipSetRobotPosition(124,62) # set robot position to consistent location
+ManipChangePiece(cube)
+ManipChangeScoringPosition(0)
+ManipWaitForButton() # wait for a human to start the sequence
+ManipGroundScore() # run the gripper
+ManipWaitForButton()
+ManipChangeState(2) # enter the scoring state
+ManipWaitForButton()
+ManipChangeState(0)# enter the stowed state
+ManipWaitForButton()
+ManipChangeState(3) # enter the hoppering state
+ManipWaitForButton()
+ManipChangeState(0) #enter the stowed state
+ManipEnd()
