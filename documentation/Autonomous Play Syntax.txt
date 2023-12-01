@@ -54,20 +54,6 @@ DriveAngleH(param1, param2)
 
 -----------------------------------------------------------
 
-DriveBalance(param1)
-# This VI balances the robot from near or far side when lined up
-
-1. "near" or "far" to indicate which side the robot is coming from in relation to the driver station
-
------------------------------------------------------------
-
-DriveOver(param1)
-# This VI drives the robot over the charge station from near or far side
-
-1. "near" or "far" to indicate which side the robot is coming from in relation to the driver station
-
------------------------------------------------------------
-
 DrivePath(param1, param2, param3, param4, param5)
 # This VI uses the pure-pursuit algorithm to follow the specified path.
 
@@ -121,50 +107,7 @@ ManipWaitForDistance(param1, param2)
 
 -----------------------------------------------------------
 
-ManipChangeState(param1)
-# This VI changes the robot's master state.
-
-1. Specifies the desired robot master state. -1=dashboard-configurable, 0=stow, 1=balancing, 2=scoring, 3=hoppering, 4=ground, 5=shelf
-
------------------------------------------------------------
-
-ManipChangeScoringPosition(param1)
-# This VI changes the robot's scoring height
-
-1. Specifies the desired scoring height (-1=dashboard, 0=mid, 1=high)
-
------------------------------------------------------------
-
-ManipDropPiece()
-# This VI drops a held piece
-
------------------------------------------------------------
-
 ManipWaitForTeleOp()
 # This VI waits for the robot mode to be TeleOp Enabled
-
------------------------------------------------------------
-
-ManipChangePiece(param1)
-# This VI changes scoring mode to cube or cone
-
-1. Changes between cube and cone scoring modes ("cube" or "cone")
-
------------------------------------------------------------
-
-ManipGroundPickup(param1)
-# This VI enters or exits ground pickup mode
-
-1. Turns on or off ground pickup ("on" or "off")
-
------------------------------------------------------------
-
-ManipGroundScore()
-# This VI scores in the low position (requires state to be stowed(0))
-
------------------------------------------------------------
-
-ManipWaitForArm()
-# This VI waits until the arm has arrived at its most recently requested state
 
 -----------------------------------------------------------
