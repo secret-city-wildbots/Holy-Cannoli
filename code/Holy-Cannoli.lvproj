@@ -426,6 +426,8 @@ AddOutputFilter chunkFilter
 			<Item Name="BlinkLight.vi" Type="VI" URL="../BlinkLight.vi"/>
 			<Item Name="DesyncInitCAN.vi" Type="VI" URL="../DesyncInitCAN.vi"/>
 			<Item Name="RGBtoGRB.vi" Type="VI" URL="../RGBtoGRB.vi"/>
+			<Item Name="SelectMotorCommand.vi" Type="VI" URL="../SelectMotorCommand.vi"/>
+			<Item Name="SelectPistonCommand.vi" Type="VI" URL="../SelectPistonCommand.vi"/>
 			<Item Name="StateSelectionEnum.vim" Type="VI" URL="../StateSelectionEnum.vim"/>
 			<Item Name="TriggerUpdate.vim" Type="VI" URL="../TriggerUpdate.vim"/>
 		</Item>
